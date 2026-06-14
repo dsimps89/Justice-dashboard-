@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Criminal Justice Process Roadmap — V5 Geometry-Corrected Scratch HTML</title>
+<style>
+:root{
+  --navy:#071d45;--blue:#0e4f96;--red:#b32226;--green:#145c2a;--purple:#55248a;--gold:#c18d1e;--ink:#061735;
+  --line:#7f91a8;--grid:#c8d1dc;--pale:#fbfdff;--soft:#f4f8fc;--orange:#d06728;
+  --shadow:0 1px 1px #0001;
+}
+*{box-sizing:border-box}html,body{margin:0;background:#e8edf4;color:var(--ink);font-family:Arial,Helvetica,sans-serif;min-width:1200px}.toolbar{position:sticky;top:0;z-index:50;background:var(--navy);color:#fff;display:flex;align-items:center;gap:10px;padding:9px 14px;font-size:13px}.toolbar button{background:#fff;color:var(--navy);border:0;border-radius:5px;padding:7px 12px;font-weight:900;cursor:pointer}.stage{width:1536px;height:1024px;margin:0 auto 30px;background:#fff;box-shadow:0 0 25px #0003;overflow:hidden;position:relative;padding:9px 12px 0}.thin{font-size:9px}.tiny{font-size:10px}.small{font-size:11px}.med{font-size:12px}.bold{font-weight:900}.center{text-align:center}.red{color:var(--red)}.green{color:var(--green)}.purple{color:var(--purple)}
+/* header */
+.header{display:grid;grid-template-columns:92px 1fr 230px 268px;gap:14px;height:108px;align-items:stretch}.logoBox{background:var(--navy);border-radius:6px;color:#fff;display:grid;place-items:center;clip-path:polygon(0 0,100% 0,100% 85%,50% 100%,0 85%)}.scaleIcon{font-size:64px;line-height:1}.mainTitle{text-align:center;padding-top:0}.mainTitle h1{margin:0;color:var(--navy);font-size:43px;letter-spacing:1px;line-height:.98;font-weight:1000}.mainTitle h2{margin:4px 0 4px;color:var(--red);font-size:19px;letter-spacing:1.4px}.mainTitle p{margin:0;color:var(--navy);font-size:16px;font-weight:900;word-spacing:10px}.topCard{border:1.8px solid var(--navy);border-radius:6px;background:#fff;padding:8px 12px}.topCard h3{margin:-1px -8px 6px;background:var(--navy);color:#fff;border-radius:4px 4px 0 0;text-align:center;font-size:13px;padding:3px}.nextCourt{border-color:var(--red)}.nextCourt h3{background:#fff;color:var(--red);font-size:16px}.cal{float:right;font-size:32px;color:var(--red)}
+.line{display:inline-block;border-bottom:1px solid #333;height:13px;vertical-align:middle}.field{border:0;border-bottom:1px solid #333;background:transparent;height:15px;outline:none;font-size:10px;padding:0 2px}.field:focus,textarea:focus{background:#fff7c6}.check{width:11px;height:11px;margin:0 4px 0 0;vertical-align:middle}.box{border:1.6px solid var(--line);border-radius:7px;background:linear-gradient(#fff,#fffefc);overflow:hidden;box-shadow:var(--shadow)}.box.greenLine{border-color:#43845d}.box.blueLine{border-color:#3e72a6}.box.purpleLine{border-color:#8a60aa}.box.redLine{border-color:#c34c4f}.boxtitle{font-weight:1000;color:var(--navy);font-size:16px;line-height:1.05;padding:6px 9px 1px}.boxtitle .badge{display:inline-grid;place-items:center;width:37px;height:37px;border-radius:50%;background:var(--green);color:#fff;font-size:26px;margin-right:10px;vertical-align:middle}.boxtitle .badge.blue{background:var(--blue)}.boxtitle .badge.purple{background:var(--purple)}.subtitle{font-weight:900;color:#111;margin:0 0 6px 56px;font-size:12px}.sectHead{display:flex;align-items:center;gap:8px;background:#f8fbff;border-bottom:1px solid var(--grid);padding:5px 7px;color:var(--navy);font-weight:1000;font-size:13px}.sectHead .letter{background:var(--navy);color:#fff;border-radius:2px;padding:3px 6px;font-size:14px}.sectHead.green{color:var(--green)}.sectHead.purple{color:var(--purple)}.sectHead.green .letter{background:var(--green)}.sectHead.purple .letter{background:var(--purple)}
+/* major layout */
+.bodyGrid{display:grid;grid-template-columns:430px 440px 410px 208px;grid-template-rows:805px;gap:10px;margin-top:6px}.col{display:grid;gap:8px}.leftCol{grid-template-rows:536px 124px 83px 54px}.midCol{grid-template-rows:310px 270px 80px 60px}.afterCol{grid-template-rows:206px 210px 115px 116px 98px}.sideCol{grid-template-rows:452px 132px 150px}.panelGrid2{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:6px}.panel{border:1px solid #a9b6c5;border-radius:4px;background:#fff;overflow:hidden}.panelTitle{font-weight:1000;font-size:12px;padding:6px 7px;color:var(--green);border-bottom:1px solid var(--grid);background:#fafffb}.panelTitle.blue{color:var(--navy)}.panelTitle.purple{color:var(--purple)}.inner{padding:7px 8px}.row{font-size:10.5px;font-weight:800;margin-bottom:7px}.row .field{width:135px}.narrow .row .field{width:105px}.charges{width:100%;border-collapse:collapse;font-size:9.5px}.charges th,.charges td{border:1px solid var(--grid);height:21px}.charges th{background:#fafcff}.charges td:first-child{text-align:center;width:35px;font-weight:900}.rights{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:8px 10px 7px;font-size:10.5px;font-weight:800;line-height:1.6}.rights div:before,.reminders li:before{content:'✓ ';color:var(--green);font-weight:1000}.lawGrid{display:grid;grid-template-columns:1.25fr .9fr;gap:6px}.checkLine{font-size:9.8px;font-weight:800;line-height:1.52;white-space:nowrap}.checkLine .field{width:55px}.reminders{margin:0;padding:4px 8px 0 16px;font-size:10px;font-weight:800;line-height:1.42;list-style:none}.reminders li{margin:0}
+/* tables */
+table.full{width:100%;border-collapse:collapse;font-size:9.5px}table.full th,table.full td{border:1px solid var(--grid);height:22px;padding:2px 4px}table.full th{background:#f9fbff;color:var(--navy);font-weight:1000}.process th:nth-child(1){width:70px}.process th:nth-child(3){width:86px}.process th:nth-child(4){width:48px}.stepNo{display:inline-grid;place-items:center;width:17px;height:17px;border-radius:50%;background:var(--blue);color:#fff;font-size:10px;margin-right:5px}.dateInput{width:56px;border:0;border-bottom:1px solid #777;text-align:center;font-size:9px}.completed{text-align:center}.twoChecks{display:grid;grid-template-columns:1fr 1fr;gap:0}.checkList{padding:6px 9px;font-size:10.2px;font-weight:800;line-height:1.7}.checkList label{display:block}.trialFields{margin-left:18px;font-size:9.5px;line-height:1.55}.quickCards{display:grid;grid-template-columns:repeat(8,1fr);gap:5px;padding:8px}.qCard{border:1px solid #b7c4d3;border-radius:5px;text-align:center;font-size:8.4px;font-weight:900;padding:4px 2px;min-height:48px}.qIcon{display:block;font-size:19px;color:var(--navy);margin-bottom:2px}.forms{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:7px 10px;font-size:10px;font-weight:800;line-height:1.7}
+/* after */
+.verdictCards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:11px}.vCard{border:1px solid #bca2cc;border-radius:6px;text-align:center;padding:12px 7px;font-size:10px;min-height:105px}.vCard h4{margin:0 0 8px;color:var(--purple);font-size:12px}.vCard .bigCheck{width:15px;height:15px}.sentenceGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:10px;padding:6px 9px}.infoInclude{border:1px solid #bca2cc;border-radius:5px;padding:8px;font-size:10px;line-height:1.55}.infoInclude ul{margin:0;padding-left:17px}.afterSent,.appeals{padding:8px 10px;font-size:10.5px;font-weight:800;line-height:1.7}.noteLines{height:62px;margin:8px 12px;background:repeating-linear-gradient(to bottom,#fff 0,#fff 18px,#cbd3dd 19px);position:relative}.noteLines:after{content:'⚖';position:absolute;right:32px;top:0;font-size:54px;color:#53268922}.notesInput{width:100%;height:100%;border:0;background:transparent;resize:none;outline:none;line-height:19px;font-size:11px}
+/* sidebar */
+.gloss h3,.emergency h3,.help h3{margin:0;text-align:center;background:var(--navy);color:#fff;padding:6px;border-radius:5px 5px 0 0;font-size:15px}.gloss h3 small{display:block;font-size:10px}.glossList{padding:8px 9px 4px}.term{display:grid;grid-template-columns:27px 1fr;gap:5px;margin-bottom:9px;font-size:9.8px;line-height:1.22}.term .ico{font-size:17px;color:var(--navy);text-align:center}.term b{font-size:11px}.emergency{border-color:#c36a2a}.emergency h3{background:#fff;color:var(--red);text-align:left;padding-left:38px;position:relative}.emergency h3:before{content:'⚠';position:absolute;left:9px;top:8px;font-size:24px}.emergency p{font-size:11px;font-weight:900;line-height:1.4;margin:8px 11px}.help h3{background:#f9fbff;color:var(--navy);border-bottom:1px solid var(--grid)}.helpList{padding:8px 12px;font-size:11.5px;font-weight:900;line-height:1.45}.phone{font-size:20px;color:var(--blue);display:inline-block;width:25px}
+/* footer */
+.footer{display:grid;grid-template-columns:1.25fr .75fr 1.2fr .8fr;gap:0;height:73px;margin-top:7px;border:1.5px solid var(--line);border-radius:5px 5px 0 0;overflow:hidden}.footPanel{border-right:1px solid var(--grid);padding:7px 12px;font-size:10px}.footPanel h4{margin:0 0 3px;text-align:center;color:var(--navy);font-size:12px}.etiquette{display:grid;grid-template-columns:55px 1fr 1fr;gap:8px}.gavel{font-size:36px;color:var(--navy);text-align:center}.commit{display:grid;grid-template-columns:65px 1fr}.handshake{font-size:39px;color:var(--navy);text-align:center}.bottomBar{height:23px;background:var(--navy);color:#fff;margin:0 -12px;text-align:center;font-weight:1000;letter-spacing:1px;font-size:14px;padding-top:3px}.updated{position:absolute;right:14px;bottom:3px;color:#fff;font-size:10px}.leaf{color:#c41318;margin:0 12px}.sigline{border-bottom:1px solid #333;display:inline-block;width:105px;height:13px}
+
+
+/* === V4 DETAIL PASS: tighter geometry, denser tables, closer print-board feel === */
+.stage{padding:7px 10px 0!important;border:4px solid var(--navy);}
+.header{grid-template-columns:92px 1fr 230px 270px!important;height:106px!important;gap:12px!important;}
+.mainTitle h1{font-size:42px!important;letter-spacing:.8px!important;}
+.mainTitle h2{font-size:19px!important;margin-top:3px!important;}
+.mainTitle p{font-size:15px!important;word-spacing:8px!important;}
+.bodyGrid{grid-template-columns:430px 440px 410px 208px!important;gap:8px!important;margin-top:5px!important;grid-template-rows:808px!important;}
+.col{gap:6px!important;}
+.leftCol{grid-template-rows:535px 124px 84px 53px!important;}
+.midCol{grid-template-rows:312px 270px 80px 60px!important;}
+.afterCol{grid-template-rows:207px 210px 115px 116px 99px!important;}
+.sideCol{grid-template-rows:452px 132px 150px!important;}
+.box{border-width:1.8px!important;border-radius:7px!important;}
+.boxtitle{font-size:16.5px!important;padding-top:5px!important;}
+.boxtitle .badge{width:38px!important;height:38px!important;font-size:27px!important;}
+.subtitle{font-size:12px!important;margin-left:58px!important;}
+.sectHead{font-size:13px!important;padding:4px 7px!important;min-height:25px!important;}
+.panelGrid2{gap:5px!important;padding:5px!important;}
+.panelTitle{font-size:11.6px!important;padding:5px 7px!important;}
+.inner{padding:6px 8px!important;}
+.row{font-size:10.2px!important;margin-bottom:6px!important;}
+.rights{font-size:10.2px!important;line-height:1.48!important;padding:6px 10px!important;}
+.reminders{font-size:9.6px!important;line-height:1.30!important;}
+table.full{font-size:9.1px!important;} table.full th,table.full td{height:21px!important;padding:1px 3px!important;}
+.process th:nth-child(1){width:88px!important}.process th:nth-child(3){width:82px!important}.process th:nth-child(4){width:44px!important}
+.stepNo{width:16px!important;height:16px!important;font-size:9px!important;margin-right:3px!important;}
+.checkList{font-size:9.7px!important;line-height:1.52!important;padding:5px 8px!important;}
+.trialFields{font-size:9px!important;line-height:1.35!important;}
+.quickCards{gap:4px!important;padding:7px!important}.qCard{min-height:47px!important;font-size:8px!important;padding:3px 2px!important}.qIcon{font-size:18px!important;}
+.forms{font-size:9.5px!important;line-height:1.52!important;padding:6px 10px!important;}
+.verdictCards{gap:12px!important;padding:10px!important}.vCard{min-height:104px!important;padding:10px 6px!important}.vCard h4{font-size:11.5px!important;}
+.sentenceGrid{padding:6px 9px!important;gap:8px!important}.infoInclude{font-size:9.5px!important;line-height:1.45!important;padding:7px!important;}
+.afterSent,.appeals{font-size:10px!important;line-height:1.55!important;padding:7px 10px!important;}
+.noteLines{height:61px!important;margin:7px 12px!important;}
+.gloss h3,.emergency h3,.help h3{font-size:14.5px!important;padding:5px!important}.glossList{padding:7px 8px 3px!important}.term{grid-template-columns:25px 1fr!important;margin-bottom:7px!important;font-size:9.45px!important;}.term b{font-size:10.5px!important}.term .ico{font-size:16px!important;}
+.emergency p{font-size:10.5px!important;margin:7px 10px!important}.helpList{font-size:10.9px!important;line-height:1.37!important;}
+.footer{height:74px!important;margin-top:6px!important;grid-template-columns:1.28fr .72fr 1.22fr .78fr!important}.footPanel{padding:6px 10px!important;font-size:9.4px!important}.footPanel h4{font-size:11.2px!important}.bottomBar{height:24px!important;font-size:13.5px!important;}
+/* v4 added visual micro-details */
+.mainTitle:after{content:'';display:block;border-top:1px solid #9aa7b7;margin:7px auto 0;width:92%;}
+.logoBox:after{content:'JUSTICE';font-size:8px;letter-spacing:1px;margin-top:-20px;color:#fff;opacity:.85;}
+.panel,.topCard{box-shadow:inset 0 0 0 1px #ffffffaa;}
+.topCard .row:before{content:'';display:inline-block;width:0;}
+.gridBlank{background:repeating-linear-gradient(to bottom,#fff 0,#fff 20px,#d0d8e2 21px)!important;}
+
+@media screen and (max-width:1536px){html,body{min-width:0}.stage{transform-origin:top left;transform:scale(calc(100vw / 1536));margin:0;height:1024px}.toolbar{position:relative}.scaleWrap{height:calc(1024px * (100vw / 1536));overflow:hidden}}@media print{.toolbar{display:none}.stage{box-shadow:none;margin:0;transform:none}.scaleWrap{height:auto}@page{size:landscape;margin:0}*{print-color-adjust:exact!important;-webkit-print-color-adjust:exact!important}}
+
+
+/* === V5 GEOMETRY CORRECTION PASS ===
+   Measured against the supplied 1536x1024 reference image.
+   Goal: tighter panel proportions, denser original-poster geometry, no image overlay. */
+.stage{
+  width:1536px!important;height:1024px!important;
+  padding:5px 5px 0!important;
+}
+.header{
+  height:107px!important;
+  grid-template-columns:92px 1fr 230px 268px!important;
+  gap:13px!important;
+}
+.logoBox{height:100px!important;border-radius:5px!important;}
+.scaleIcon{font-size:63px!important;}
+.mainTitle h1{font-size:42px!important;line-height:.96!important;letter-spacing:1.1px!important;margin-top:2px!important;white-space:nowrap!important;}
+.mainTitle h2{font-size:19px!important;margin:4px 0 5px!important;letter-spacing:1.35px!important;}
+.mainTitle p{font-size:16px!important;word-spacing:8px!important;}
+.topCard{height:100px!important;padding:7px 11px!important;}
+.topCard h3{font-size:13px!important;padding:3px!important;margin:-1px -7px 6px!important;}
+.nextCourt h3{font-size:16px!important;margin-top:0!important;}
+.bodyGrid{
+  grid-template-columns:432px 436px 411px 209px!important;
+  grid-template-rows:812px!important;
+  gap:9px!important;
+  margin-top:5px!important;
+}
+.col{gap:7px!important;min-height:0!important;}
+/* Original board column rhythm: left 3 blocks, middle 4 blocks, after 5 blocks, sidebar 3 blocks */
+.leftCol{grid-template-rows:540px 157px 101px!important;}
+.midCol{grid-template-rows:306px 274px 90px 121px!important;}
+.afterCol{grid-template-rows:209px 213px 116px 122px 124px!important;}
+.sideCol{grid-template-rows:456px 139px 203px!important;}
+.box{border-width:1.45px!important;border-radius:6px!important;}
+.boxtitle{font-size:16px!important;padding:6px 8px 1px!important;line-height:1!important;}
+.boxtitle .badge{width:38px!important;height:38px!important;font-size:27px!important;margin-right:10px!important;}
+.subtitle{font-size:12px!important;margin:0 0 6px 57px!important;}
+.panelGrid2{gap:6px!important;padding:5px!important;grid-template-rows:174px 167px!important;}
+.panel{border-radius:4px!important;}
+.panelTitle{font-size:11.7px!important;padding:5px 6px!important;line-height:1.05!important;}
+.inner{padding:6px 7px!important;}
+.row{font-size:10.2px!important;margin-bottom:6px!important;line-height:1.15!important;}
+.field{height:14px!important;font-size:9.8px!important;}
+.check{width:10.5px!important;height:10.5px!important;}
+.charges{font-size:9.2px!important;}
+.charges th,.charges td{height:20px!important;}
+.rights{font-size:10.15px!important;line-height:1.52!important;padding:7px 10px!important;gap:4px 8px!important;}
+.lawGrid{grid-template-columns:1.27fr .9fr!important;gap:5px!important;}
+.checkLine{font-size:9.45px!important;line-height:1.45!important;}
+.reminders{font-size:9.7px!important;line-height:1.35!important;padding-top:4px!important;}
+.sectHead{font-size:12.6px!important;padding:4px 7px!important;gap:7px!important;min-height:25px!important;}
+.sectHead .letter{font-size:13px!important;padding:2px 5px!important;}
+table.full{font-size:8.9px!important;}
+table.full th,table.full td{height:21.5px!important;padding:1px 3px!important;}
+.process th:nth-child(1){width:111px!important;}
+.process th:nth-child(3){width:84px!important;}
+.process th:nth-child(4){width:45px!important;}
+.stepNo{width:16px!important;height:16px!important;font-size:9px!important;margin-right:4px!important;}
+.twoChecks{height:100%!important;}
+.checkList{font-size:9.8px!important;line-height:1.58!important;padding:5px 8px!important;}
+.trialFields{font-size:9.1px!important;line-height:1.45!important;margin-left:17px!important;}
+.quickCards{grid-template-columns:repeat(8,1fr)!important;gap:4px!important;padding:7px!important;}
+.qCard{min-height:54px!important;font-size:8px!important;padding:4px 1px!important;}
+.qIcon{font-size:18px!important;}
+.forms{font-size:9.8px!important;line-height:1.62!important;padding:8px 10px!important;}
+.verdictCards{gap:14px!important;padding:10px!important;}
+.vCard{min-height:104px!important;padding:11px 6px!important;font-size:9.6px!important;}
+.vCard h4{font-size:12px!important;margin-bottom:7px!important;}
+.sentenceGrid{grid-template-columns:1.18fr .86fr!important;gap:10px!important;padding:6px 9px!important;}
+.infoInclude{font-size:9.65px!important;line-height:1.48!important;padding:7px!important;}
+.afterSent,.appeals{font-size:10px!important;line-height:1.6!important;padding:7px 10px!important;}
+.noteLines{height:78px!important;margin:7px 12px!important;background:repeating-linear-gradient(to bottom,#fff 0,#fff 18px,#cbd3dd 19px)!important;}
+.noteLines:after{font-size:62px!important;right:28px!important;top:2px!important;}
+.gloss h3,.emergency h3,.help h3{font-size:14px!important;padding:6px!important;}
+.gloss h3 small{font-size:9.5px!important;}
+.glossList{padding:8px 9px!important;}
+.term{grid-template-columns:25px 1fr!important;gap:5px!important;margin-bottom:8.2px!important;font-size:9.55px!important;line-height:1.18!important;}
+.term .ico{font-size:16px!important;}
+.term b{font-size:10.7px!important;}
+.emergency p{font-size:10.5px!important;line-height:1.35!important;margin:7px 10px!important;}
+.helpList{font-size:11.1px!important;line-height:1.43!important;padding:8px 12px!important;}
+.phone{font-size:19px!important;width:25px!important;}
+.footer{
+  height:72px!important;
+  margin-top:6px!important;
+  grid-template-columns:1.31fr .81fr 1.21fr .82fr!important;
+}
+.footPanel{padding:6px 11px!important;font-size:9.7px!important;line-height:1.17!important;}
+.footPanel h4{font-size:11.5px!important;margin-bottom:3px!important;}
+.etiquette{grid-template-columns:56px 1fr 1fr!important;gap:7px!important;}
+.gavel{font-size:35px!important;}
+.handshake{font-size:38px!important;}
+.commit{grid-template-columns:64px 1fr!important;}
+.bottomBar{height:24px!important;margin:0 -5px!important;font-size:14px!important;padding-top:4px!important;}
+.updated{right:12px!important;bottom:4px!important;font-size:10px!important;}
+@media screen and (max-width:1536px){
+  .stage{transform-origin:top left!important;transform:scale(calc(100vw / 1536))!important;margin:0!important;}
+  .scaleWrap{height:calc(1024px * (100vw / 1536))!important;overflow:hidden!important;}
+}
+@media print{.stage{transform:none!important;margin:0!important;box-shadow:none!important}.scaleWrap{height:auto!important}}
+
+</style>
+</head>
+<body>
+<div class="toolbar"><b>Criminal Justice Roadmap V5 — detailed scratch HTML</b><button onclick="window.print()">Print / PDF</button><button onclick="localStorage.removeItem('cjRoadmapV3');location.reload()">Clear saved data</button><span>Autosaves locally.</span></div>
+<div class="scaleWrap"><main class="stage">
+  <header class="header">
+    <div class="logoBox"><div class="scaleIcon">⚖</div></div>
+    <div class="mainTitle"><h1>CRIMINAL JUSTICE PROCESS ROADMAP</h1><h2>FOR SELF-REPRESENTED ACCUSED PERSONS (ONTARIO)</h2><p>Plan Your Case. Protect Your Rights. Stay Organized. Pursue the Best Possible Outcome.</p></div>
+    <div class="topCard"><h3>CASE INFORMATION <span class="thin">(FILL IN)</span></h3><div class="row">Case Number: <input data-save class="field" style="width:125px"></div><div class="row">Court: <input data-save class="field" style="width:166px"></div><div class="row">Date Charged: <input data-save class="field" style="width:126px"></div></div>
+    <div class="topCard nextCourt"><span class="cal">▦</span><h3>NEXT COURT DATE</h3><div class="row">Date: <input data-save class="field" style="width:135px"></div><div class="row">Time: <input data-save class="field" style="width:150px"></div><div class="row">Location: <input data-save class="field" style="width:130px"></div></div>
+  </header>
+  <section class="bodyGrid">
+    <div class="col leftCol">
+      <div class="box greenLine"><div class="boxtitle"><span class="badge">1</span>GETTING STARTED</div><p class="subtitle">Understand Your Case &amp; Your Options</p><div class="panelGrid2">
+        <div class="panel"><div class="panelTitle">♙ &nbsp; A. MY INFORMATION <span class="thin">(FILL IN)</span></div><div class="inner"><div class="row">Full Name: <input data-save class="field" style="width:130px"></div><div class="row">Date of Birth: <input data-save class="field" style="width:120px"></div><div class="row">Address: <input data-save class="field" style="width:142px"></div><div class="row"><input data-save class="field" style="width:178px"></div><div class="row">Phone: <input data-save class="field" style="width:148px"></div><div class="row">Email: <input data-save class="field" style="width:152px"></div></div></div>
+        <div class="panel"><div class="panelTitle">⚒ &nbsp; B. CHARGES / COUNTS</div><div class="inner"><table class="charges"><tr><th>Count #</th><th>Charge / Offence</th></tr><tr><td>1.</td><td><input data-save class="field" style="width:120px"></td></tr><tr><td>2.</td><td><input data-save class="field" style="width:120px"></td></tr><tr><td>3.</td><td><input data-save class="field" style="width:120px"></td></tr><tr><td>4.</td><td><input data-save class="field" style="width:120px"></td></tr><tr><td>5.</td><td><input data-save class="field" style="width:120px"></td></tr></table><div class="row" style="margin-top:6px">Other: <input data-save class="field" style="width:138px"></div></div></div>
+        <div class="panel"><div class="panelTitle">▦ &nbsp; C. KEY DATES <span class="thin">(FILL IN)</span></div><div class="inner narrow"><div class="row">Date of Charge: <input data-save class="field"></div><div class="row">Date of First Appearance: <input data-save class="field" style="width:65px"></div><div class="row">Next Court Date: <input data-save class="field"></div><div class="row">Pre-Trial Conference Date: <input data-save class="field" style="width:58px"></div><div class="row">Trial Date (if known): <input data-save class="field" style="width:80px"></div><div class="row">Sentencing Date: <input data-save class="field" style="width:82px"></div></div></div>
+        <div class="panel"><div class="panelTitle">▥ &nbsp; D. COURT LEVEL &amp; TRIAL TYPE</div><div class="inner"><div class="row">Court Level (check one):</div><label class="checkLine"><input data-save type="checkbox" class="check"> Provincial Court</label><br><label class="checkLine"><input data-save type="checkbox" class="check"> Superior Court of Justice</label><div class="row" style="margin-top:8px">Trial Type (if known):</div><label class="checkLine"><input data-save type="checkbox" class="check"> Judge Alone</label><br><label class="checkLine"><input data-save type="checkbox" class="check"> Judge &amp; Jury</label><div class="row" style="margin-top:8px">Election Made: <label><input data-save type="checkbox" class="check">Yes</label> <label><input data-save type="checkbox" class="check">No</label> Date: <input data-save class="field" style="width:55px"></div></div></div>
+      </div><div class="panel" style="margin:0 6px 6px"><div class="panelTitle">🛡 &nbsp; E. MY RIGHTS <span class="thin">(KNOW YOUR RIGHTS)</span></div><div class="rights"><div>Presumed innocent until proven guilty</div><div>Right to an interpreter (if needed)</div><div>Right to remain silent</div><div>Right to be informed of the charge(s)</div><div>Right to legal representation</div><div>Right to make full answer and defence</div><div>Right to full disclosure</div><div>Right to know the consequences</div><div>Right to a fair and public trial</div><div>Right to appeal (if applicable)</div><div>Right to call and question witnesses</div></div></div></div>
+      <div class="box greenLine"><div class="lawGrid"><div><div class="sectHead green"><span>⚖</span>F. FINDING A LAWYER / LEGAL AID <span class="thin">(FILL IN)</span></div><div class="inner"><div class="small bold">I have spoken to / applied for (check all that apply):</div><label class="checkLine"><input data-save type="checkbox" class="check">Law Society Referral Service <input data-save class="field" style="width:44px" placeholder="Date"></label><br><label class="checkLine"><input data-save type="checkbox" class="check">Lawyer Directory (lso.ca) <input data-save class="field" style="width:57px" placeholder="Date"></label><br><label class="checkLine"><input data-save type="checkbox" class="check">Legal Aid Ontario <input data-save class="field" style="width:78px" placeholder="Date"></label><br><label class="checkLine"><input data-save type="checkbox" class="check">Community Legal Clinic <input data-save class="field" style="width:58px" placeholder="Date"></label><br><label class="checkLine"><input data-save type="checkbox" class="check">Law Student Legal Service <input data-save class="field" style="width:48px" placeholder="Date"></label><br><label class="checkLine"><input data-save type="checkbox" class="check">Rowbotham Application <input data-save class="field" style="width:58px" placeholder="Date"></label></div></div><div><div class="sectHead green">☎ CONTACT INFORMATION</div><div class="inner"><div class="row">Crown Counsel Name: <input data-save class="field" style="width:92px"></div><div class="row">Crown Office: <input data-save class="field" style="width:119px"></div><div class="row">Phone: <input data-save class="field" style="width:147px"></div><div class="row">Trial Coordinator Office: <input data-save class="field" style="width:73px"></div><div class="row">Phone: <input data-save class="field" style="width:147px"></div><div class="row">Email: <input data-save class="field" style="width:150px"></div></div></div></div></div>
+      <div class="box greenLine"><div class="sectHead green">⚠ IMPORTANT REMINDERS</div><ul class="reminders"><li>Only a lawyer can represent you in the Superior Court of Justice.</li><li>You have the right to represent yourself.</li><li>Tell the court know ASAP if you want a lawyer.</li><li>If you don’t understand something, ask the judge.</li><li>All communication with the judge must go through the Trial Coordinator’s Office.</li><li>Always give a copy of documents to Crown counsel.</li></ul></div>
+    </div>
+    <div class="col midCol">
+      <div class="box blueLine"><div class="boxtitle"><span class="badge blue">2</span>BEFORE &amp; DURING TRIAL</div><p class="subtitle">Prepare, Attend &amp; Present Your Case</p><div class="sectHead"><span>♙</span>PROCESS TIMELINE <span class="thin">(TRACK YOUR PROGRESS)</span></div><table class="full process"><tr><th>Step</th><th>Description</th><th>Target / Actual Date</th><th>Completed</th></tr>
+        <tr><td><span class="stepNo">1</span><b>First Appearance<br><span class="thin">(Arraignment)</span></b></td><td>Charges read. Plea entered (guilty or not guilty).</td><td>___ / ___ / ___</td><td class="completed"><input data-save type="checkbox" class="check"></td></tr>
+        <tr><td><span class="stepNo">2</span><b>Disclosure</b></td><td>Receive and review Crown disclosure.</td><td>___ / ___ / ___</td><td class="completed"><input data-save type="checkbox" class="check"></td></tr>
+        <tr><td><span class="stepNo">3</span><b>Pre-Trial Conference</b></td><td>Clarify issues, review witnesses, set trial plan.</td><td>___ / ___ / ___</td><td class="completed"><input data-save type="checkbox" class="check"></td></tr>
+        <tr><td><span class="stepNo">4</span><b>Pre-Trial Applications</b></td><td>Charter Notice, motions, or admissibility issues.</td><td>___ / ___ / ___</td><td class="completed"><input data-save type="checkbox" class="check"></td></tr>
+        <tr><td><span class="stepNo">5</span><b>Trial Preparation</b></td><td>Witnesses, exhibits, questions, documents.</td><td>___ / ___ / ___</td><td class="completed"><input data-save type="checkbox" class="check"></td></tr>
+        <tr><td><span class="stepNo">6</span><b>Trial</b></td><td>Presentation of evidence and arguments.</td><td>___ / ___ / ___</td><td class="completed"><input data-save type="checkbox" class="check"></td></tr>
+        <tr><td><span class="stepNo">7</span><b>Closing Arguments</b></td><td>Your closing address to the jury or judge.</td><td>___ / ___ / ___</td><td class="completed"><input data-save type="checkbox" class="check"></td></tr>
+        <tr><td><span class="stepNo">8</span><b>Verdict</b></td><td>Judge or jury decision.</td><td>___ / ___ / ___</td><td class="completed"><input data-save type="checkbox" class="check"></td></tr></table></div>
+      <div class="box blueLine"><div class="twoChecks"><div><div class="sectHead"><span class="letter">B</span>PRE-TRIAL CHECKLIST</div><div class="checkList"><label><input data-save type="checkbox" class="check">Reviewed all disclosure</label><label><input data-save type="checkbox" class="check">Missing disclosure? <input data-save class="field" style="width:130px"></label><label><input data-save type="checkbox" class="check">Understand elements of each charge</label><label><input data-save type="checkbox" class="check">Identified Crown witnesses</label><label><input data-save type="checkbox" class="check">Identified my witnesses</label><label><input data-save type="checkbox" class="check">Subpoenas prepared &amp; served</label><div class="trialFields">How many? <input data-save class="field" style="width:52px"></div><label><input data-save type="checkbox" class="check">Documents / exhibits organized</label><div class="trialFields">How many copies prepared? <input data-save class="field" style="width:36px"></div><label><input data-save type="checkbox" class="check">Prepared opening statement</label><label><input data-save type="checkbox" class="check">Prepared questions for witnesses</label><label><input data-save type="checkbox" class="check">Court attire ready</label><label><input data-save type="checkbox" class="check">Travel / parking / accommodations</label></div></div><div><div class="sectHead"><span class="letter">C</span>TRIAL DAY CHECKLIST</div><div class="checkList"><label><input data-save type="checkbox" class="check">Arrive on time</label><div class="trialFields">Time I will arrive: <input data-save class="field" style="width:70px"> AM / PM</div><label><input data-save type="checkbox" class="check">All witnesses confirmed</label><div class="trialFields">Witness #1: <input data-save class="field" style="width:62px"> Time: <input data-save class="field" style="width:42px"></div><div class="trialFields">Witness #2: <input data-save class="field" style="width:62px"> Time: <input data-save class="field" style="width:42px"></div><div class="trialFields">Witness #3: <input data-save class="field" style="width:62px"> Time: <input data-save class="field" style="width:42px"></div><div class="trialFields">Witness #4: <input data-save class="field" style="width:62px"> Time: <input data-save class="field" style="width:42px"></div><label><input data-save type="checkbox" class="check">Exhibits / documents (3 copies)</label><label><input data-save type="checkbox" class="check">Notebook / pen / highlighters</label><label><input data-save type="checkbox" class="check">Water / medication / needs</label><label><input data-save type="checkbox" class="check">Understand daily schedule</label><div class="trialFields">Start: <input data-save class="field" style="width:45px"> Lunch: <input data-save class="field" style="width:45px"> End: <input data-save class="field" style="width:45px"></div><label><input data-save type="checkbox" class="check">Questions for the judge?</label><input data-save class="field" style="width:180px"></div></div></div></div>
+      <div class="box blueLine"><div class="sectHead"><span class="letter">D</span>DURING TRIAL — QUICK REFERENCE</div><div class="quickCards"><div class="qCard"><span class="qIcon">🎧</span>Listen<br>Carefully</div><div class="qCard"><span class="qIcon">✍</span>Take<br>Notes</div><div class="qCard"><span class="qIcon">🖊</span>Stand to<br>Speak</div><div class="qCard"><span class="qIcon">⚖</span>Address Judge<br>“Your Honour”</div><div class="qCard"><span class="qIcon">?</span>Objections?<br>Stand &amp; State</div><div class="qCard"><span class="qIcon">🗣</span>Only One<br>Person Speaks</div><div class="qCard"><span class="qIcon">👥</span>Use “Mr./Ms.”<br>for Everyone</div><div class="qCard"><span class="qIcon">⌕</span>Ask for Help<br>if Needed</div></div></div>
+      <div class="box blueLine"><div class="sectHead"><span class="letter">E</span>FORMS YOU MAY NEED <span class="thin">(SEE BACK FOR DETAILS)</span></div><div class="forms"><div><label><input data-save type="checkbox" class="check">Form 1 – Notice of Application</label><br><label><input data-save type="checkbox" class="check">Form 5 – Notice of App. &amp; Constitutional Issue</label><br><label><input data-save type="checkbox" class="check">Form 16 – Subpoena to Witness</label></div><div><label><input data-save type="checkbox" class="check">Affidavit (In Support)</label><br><label><input data-save type="checkbox" class="check">Request for Disclosure (Template)</label><br><label><input data-save type="checkbox" class="check">Letter to Crown (Template)</label><br><label><input data-save type="checkbox" class="check">Other: <input data-save class="field" style="width:115px"></label></div></div></div>
+    </div>
+    <div class="col afterCol">
+      <div class="box purpleLine"><div class="boxtitle"><span class="badge purple">3</span>AFTER TRIAL</div><p class="subtitle">Verdict, Sentencing &amp; Beyond</p><div class="sectHead purple"><span>♙</span>VERDICT OUTCOME <span class="thin">(FILL IN)</span></div><div class="verdictCards"><div class="vCard"><h4>NOT GUILTY</h4><input data-save type="checkbox" class="bigCheck"><p>Case Over</p><div>Date: <input data-save class="field" style="width:62px"></div></div><div class="vCard"><h4>GUILTY</h4><input data-save type="checkbox" class="bigCheck"><p>Proceed to Sentencing</p><div>Date: <input data-save class="field" style="width:62px"></div></div><div class="vCard"><h4>MISTRIAL</h4><input data-save type="checkbox" class="bigCheck"><p>New Trial May Be Ordered</p><div>Date: <input data-save class="field" style="width:62px"></div></div></div></div>
+      <div class="box purpleLine"><div class="sectHead purple"><span class="letter">B</span>SENTENCING PREPARATION</div><div class="sentenceGrid"><div><div class="row">My Sentencing Date: <input data-save class="field" style="width:122px"></div><div class="row">I am preparing:</div><div class="checkList" style="padding:0"><label><input data-save type="checkbox" class="check">Personal background information</label><label><input data-save type="checkbox" class="check">Character references</label><label><input data-save type="checkbox" class="check">Rehabilitation / support plan</label><label><input data-save type="checkbox" class="check">Research on sentencing ranges</label><label><input data-save type="checkbox" class="check">Victim impact / reparation (if any)</label><label><input data-save type="checkbox" class="check">Submissions to judge (written)</label><label><input data-save type="checkbox" class="check">Other: <input data-save class="field" style="width:150px"></label></div></div><div class="infoInclude"><b>Information to Include:</b><ul><li>Family / relationships</li><li>Education / work history</li><li>Health (physical / mental)</li><li>Community involvement</li><li>Addictions / treatment</li><li>Financial situation</li><li>Other mitigating factors</li></ul></div></div></div>
+      <div class="box purpleLine"><div class="sectHead purple"><span class="letter">C</span>AFTER SENTENCING</div><div class="afterSent"><label><input data-save type="checkbox" class="check">Probation Conditions:</label> <label>Yes <input data-save type="checkbox" class="check"></label> <label>No <input data-save type="checkbox" class="check"></label> End Date: <input data-save class="field" style="width:92px"><br><label><input data-save type="checkbox" class="check">Record Check Eligible After (if applicable):</label> <input data-save class="field" style="width:180px"><br><label><input data-save type="checkbox" class="check">Pardon / Record Suspension Eligible After:</label> <input data-save class="field" style="width:160px"><br><label><input data-save type="checkbox" class="check">Support Services I Need:</label> <input data-save class="field" style="width:230px"></div></div>
+      <div class="box purpleLine"><div class="sectHead purple"><span class="letter">D</span>APPEALS <span class="thin">(IF APPLICABLE)</span></div><div class="appeals">I want to appeal my: <label><input data-save type="checkbox" class="check">Conviction</label> <label><input data-save type="checkbox" class="check">Sentence</label><br>Deadline to file Notice of Appeal (30 days): <input data-save class="field" style="width:125px"><br>Date I will file: <input data-save class="field" style="width:105px"> Filed: <label>Yes <input data-save type="checkbox" class="check"></label> <label>No <input data-save type="checkbox" class="check"></label><br>Reason(s) for Appeal (summary): <input data-save class="field" style="width:225px"></div></div>
+      <div class="box purpleLine"><div class="sectHead purple"><span class="letter">E</span>MY NOTES &amp; REFLECTIONS</div><div class="small bold" style="padding:4px 10px 0">What went well? What can I improve? What are my next steps?</div><div class="noteLines"><textarea data-save class="notesInput"></textarea></div></div>
+    </div>
+    <div class="col sideCol">
+      <div class="box gloss"><h3>GLOSSARY <small>(QUICK REFERENCE)</small></h3><div class="glossList"><div class="term"><div class="ico">♙</div><div><b>Accused:</b> A person charged with a criminal offence.</div></div><div class="term"><div class="ico">▣</div><div><b>Disclosure:</b> Information the Crown must give you.</div></div><div class="term"><div class="ico">⚭</div><div><b>Voir Dire:</b> A hearing without the jury to decide legal issues.</div></div><div class="term"><div class="ico">▤</div><div><b>Subpoena:</b> A court order requiring a witness to attend and give evidence.</div></div><div class="term"><div class="ico">⚖</div><div><b>Onus / Burden of Proof:</b> The responsibility to prove something.</div></div><div class="term"><div class="ico">▥</div><div><b>Beyond a Reasonable Doubt:</b> The high standard the Crown must meet.</div></div><div class="term"><div class="ico">↩</div><div><b>Adjournment:</b> A delay or postponement of a court proceeding.</div></div><div class="term"><div class="ico">▧</div><div><b>Exhibit:</b> A document or object admitted as evidence.</div></div><div class="term"><div class="ico">♡</div><div><b>Hearsay:</b> Statements made by someone not in court.</div></div></div></div>
+      <div class="box emergency"><h3>EMERGENCY / CAN’T ATTEND COURT?</h3><p>Contact the courthouse <span class="red">IMMEDIATELY.</span></p><p>Failure to attend can result in a warrant, trial in absentia, and loss of rights.</p></div>
+      <div class="box help"><h3>HELPFUL CONTACTS</h3><div class="helpList"><span class="phone">☎</span>Legal Aid Ontario<br><span style="margin-left:29px">1-800-668-8258<br>legalaid.on.ca</span><br><span class="phone">☎</span>Court Information Line<br><span style="margin-left:29px">1-844-630-5000</span><br><span class="phone">☎</span>Crown Attorney’s Office<br><span style="margin-left:29px">(Your location)</span><br><span class="phone">☎</span>Victim Support Line<br><span style="margin-left:29px">1-888-579-2888</span></div></div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footPanel etiquette"><div class="gavel">⚖</div><div><h4>COURT ETIQUETTE REMINDERS</h4>• Stand when the judge enters or leaves.<br>• Address the judge as “Your Honour.”<br>• Do not interrupt. One person speaks at a time.</div><div><br>• No eating or drinking in court.<br>• Use “Mr./Ms.” for all. No first names.<br><span class="thin">*Times may vary. Listen for any changes.</span></div></div>
+    <div class="footPanel"><h4>DAILY COURT SCHEDULE (TYPICAL)</h4>Court Starts: <span class="sigline">10:00 AM</span><br>Lunch Break: <span class="sigline">1:00 PM</span><br>Afternoon Starts: <span class="sigline">2:15 PM</span><br>Court Ends: <span class="sigline">4:30 - 5:00 PM</span></div>
+    <div class="footPanel commit"><div class="handshake">🤝</div><div><h4>MY COMMITMENT</h4>I will stay informed, stay organized, respect the court process, and do my best to present my case honestly and to the best of my ability.<br>Signature: <span class="sigline"></span> Date: <span class="sigline" style="width:80px"></span></div></div>
+    <div class="footPanel"><h4>IMPORTANT DISCLAIMER</h4>This guide is general information only and not legal advice. Laws and procedures may change. When in doubt, seek legal advice about your specific situation.</div>
+  </footer>
+  <div class="bottomBar"><span>You have rights. You have options. You can navigate this process.</span><span class="leaf">✦</span>STAY INFORMED. STAY PREPARED. STAY IN CONTROL.<span class="leaf">✦</span><span class="updated">Updated: May 2025</span></div>
+</main></div>
+<script>
+const els=[...document.querySelectorAll('[data-save]')];const KEY='cjRoadmapV5';const saved=JSON.parse(localStorage.getItem(KEY)||'{}');els.forEach((el,i)=>{const k='f'+i;if(saved[k]!==undefined){if(el.type==='checkbox'||el.type==='radio')el.checked=saved[k];else el.value=saved[k]}el.addEventListener('input',save);el.addEventListener('change',save)});function save(){const o={};els.forEach((el,i)=>o['f'+i]=(el.type==='checkbox'||el.type==='radio')?el.checked:el.value);localStorage.setItem(KEY,JSON.stringify(o));}
+</script>
+</body>
+</html>
